@@ -1,0 +1,52 @@
+const tooltips = document.querySelectorAll(".tooltip");
+const mapContainer = document.querySelector(".map-container");
+
+let currentTooltip = null; // Store the currently active tooltip (initially null)
+
+mapContainer.addEventListener("mousemove", (event) => {
+    const target = event.target;
+
+    // Check if clicked element is a path and has a data-tooltip attribute
+    if (target.tagName !== "path" || !target.dataset.tooltip) return;
+
+    const state = target.dataset.tooltip;
+    currentTooltip = document.querySelector(`.tooltip[data-state="${state}"]`);
+
+    console.log(currentTooltip);
+    // Hide all tooltips except the current one
+    tooltips.forEach((tooltip) => {
+        if (tooltip !== currentTooltip) {
+            tooltip.style.opacity = 0;
+            tooltip.style.display = "none";
+        }
+    });
+
+    // Update position and show the current tooltip
+    const tooltipX = event.clientX + 10; // Adjust X position as needed
+    const tooltipY = event.clientY + 10; // Adjust Y position as needed
+    currentTooltip.style.left = `${tooltipX}px`;
+    currentTooltip.style.top = `${tooltipY}px`;
+    currentTooltip.style.opacity = 1; // Ensure tooltip visibility
+    currentTooltip.style.display = "block"; // Ensure tooltip visibility
+});
+
+// Handle mouse leaving the map container (hide all tooltips)
+mapContainer.addEventListener("mouseleave", () => {
+    if (currentTooltip) {
+        currentTooltip.style.opacity = 0;
+        currentTooltip.style.display = "none";
+        currentTooltip = null; // Reset active tooltip
+    }
+});
+
+mapContainer.addEventListener("click", (event) => {
+    const target = event.target;
+
+    // Check if clicked element is a path and has a data-tooltip attribute
+    if (target.tagName !== "path" || !target.dataset.tooltip) return;
+
+    const state = target.dataset.tooltip;
+
+    // Redirect to state.html with the dynamic state value
+    window.location.href = `${state}.html`;
+});
