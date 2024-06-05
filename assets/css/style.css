@@ -163,6 +163,7 @@ a:hover{
 }
 .hero_section p{
     font-size: 17px;
+    text-align: justify;
 }
 .hero_section button{
     background-color: var(--primary-color);
@@ -423,10 +424,10 @@ a:hover{
 
 .banner_section_up  h4{
     color: white;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 600;
     position: absolute;
-    margin-left: -20px;
+    margin-left: -32px;
     margin-top: 20px;
     font-family: var(--head-font);
 }
@@ -516,7 +517,7 @@ a:hover{
     font-size: 20px;
     font-weight: 600;
     margin-top: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .second_section .count{
     margin-left: auto !important;
@@ -870,3 +871,20 @@ a:hover{
         font-family: var(--head-font);
     }
 }
+
+
+@media (min-width: 1550px) and (max-width: 2000px) {
+    
+    .hero_section .icons{
+        padding: 40px;
+        gap: 45px;
+    }
+    .hero_section .icons img{
+        width: 32px;
+    }
+    .map_section .state_view {
+        bottom: 200px;
+        right: 16%;
+    }
+}
+  
