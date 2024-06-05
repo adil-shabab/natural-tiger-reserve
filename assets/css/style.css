@@ -420,6 +420,16 @@ a:hover{
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+.banner_section_up  h4{
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 20px;
+    font-family: var(--head-font);
+}
 .first_section{
     padding: 20px;
 }
@@ -444,6 +454,7 @@ a:hover{
 }
 .first_section .left_section p{
     font-family: var(--head-font);
+    text-align: justify;
 }
 .first_section .left_section p span{
     font-family: var(--body-font);
@@ -455,7 +466,7 @@ a:hover{
     justify-content: flex-end;
     align-items: flex-end;
     margin-top: 35px;
-    padding: 10px 20px;
+    padding: 0px;
 }
 .first_section .left_section .map_view .map{
     width: 150px;
@@ -513,6 +524,12 @@ a:hover{
     justify-content: flex-start;
     align-items: flex-start;
 }
+.first_section .right_section{
+    padding-left: 40px;
+}
+.second_section .right_section{
+    padding-right: 40px;
+}
 
 
 
@@ -568,6 +585,17 @@ a:hover{
         width: 220px;
     }
 
+    .first_section .right_section{
+        padding-left: 20px;
+    }
+    .second_section .right_section{
+        padding-right: 20px;
+    }
+
+    .banner_section_up  h4{
+        font-size: 35px;
+    }
+    
 }
 
 
@@ -647,6 +675,12 @@ a:hover{
     }
     .first_section .right_section{
         padding: 0;
+    }
+
+    .banner_section_up  h4{
+        font-size: 30px;
+        margin-left: 30px;
+        margin-top: 10px;
     }
 
 
@@ -785,7 +819,7 @@ a:hover{
     }
 
     .first_section .container{
-        padding: 40px 8px;
+        padding: 6px 8px 40px;
     }
     
     .first_section .right_section .count_box h5{
@@ -793,5 +827,13 @@ a:hover{
     }
     .first_section .heading{
         font-size: 22px;
+    }
+
+    .banner_section_up  h4{
+        font-size: 25px;
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 0px;
+        font-family: var(--head-font);
     }
 }
