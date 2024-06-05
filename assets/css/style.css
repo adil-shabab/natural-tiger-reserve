@@ -37,11 +37,13 @@ a{
 a:hover{
     text-decoration: none;
 }
-
+.bandipur_click, .biligiriranganatha_click, .kali_click, .nagarahole_click, .bhadra_click{
+    cursor: pointer;
+}
 
 
 .navbar{
-    padding: 30px 0;
+    padding: 20px 0;
 }
 .navbar .navbar-brand img{
     width: 200px;
@@ -406,6 +408,110 @@ a:hover{
 }
 .footer .bt_view .icons a img{
     width: 18px;
+}
+
+
+
+
+.banner_section_up{
+    padding: 35px 0;
+    background: url(../img/banner-up.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.first_section .container{
+    padding: 100px 0;
+    border-bottom: 1px solid rgba(189, 189, 189, 0.766);
+}
+.first_section .count{
+    background-color: rgba(217, 217, 217, 0.185);
+    width: fit-content;
+    padding: 10px;
+    color: var(--primary-color);
+    font-size: 35px;
+}
+.first_section .heading{
+    text-transform: uppercase ;
+    font-size: 30px;
+    font-weight: bold;
+    color: #006838;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+.first_section .left_section p{
+    font-family: var(--head-font);
+}
+.first_section .left_section p span{
+    font-family: var(--body-font);
+    color: #006838;
+    font-weight: 600;
+}
+.first_section .left_section .map_view{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 35px;
+    padding: 10px 20px;
+}
+.first_section .left_section .map_view .map{
+    width: 150px;
+}
+.first_section .right_section{
+    padding: 0px 20px;
+}
+.first_section .right_section .count_box{
+    margin-top: 35px;
+    background-color: #e9ffeb;
+}
+.first_section .right_section .count_box h5{
+    color: #006838;
+    background-color: #d1f2d3;
+    font-size: 20px;
+    padding: 12px 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.first_section .right_section .count_box .inner_box{
+    margin-top: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(87, 87, 87, 0.626);
+    display: flex;
+}
+.first_section .right_section .count_box .inner_box .divide{
+    flex-direction: column;
+    width: 50%;
+    display: flex;
+}
+.first_section .right_section .count_box .inner_box .divide span{
+    font-size: 15px;
+    padding: 5px;
+    width: 100%;
+}
+.first_section .right_section .count_box .inner_box .divide span.first{
+    border-bottom: 1px solid rgba(171, 168, 168, 0.804);
+}
+
+.first_section .right_section .count_box .inner_box span{
+    width: 50%;
+}
+.first_section .right_section .count_box .inner_parent{
+    padding: 5px 20px 20px 20px;
+}
+.first_section .right_section .count_box h6{
+    color: #006838;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.second_section .count{
+    margin-left: auto !important;
+}
+.second_section .left_section .map_view{
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 
