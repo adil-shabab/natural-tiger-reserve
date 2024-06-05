@@ -420,7 +420,9 @@ a:hover{
     background-position: center center;
     background-repeat: no-repeat;
 }
-
+.first_section{
+    padding: 20px;
+}
 .first_section .container{
     padding: 100px 0;
     border-bottom: 1px solid rgba(189, 189, 189, 0.766);
@@ -458,9 +460,7 @@ a:hover{
 .first_section .left_section .map_view .map{
     width: 150px;
 }
-.first_section .right_section{
-    padding: 0px 20px;
-}
+
 .first_section .right_section .count_box{
     margin-top: 35px;
     background-color: #e9ffeb;
@@ -626,6 +626,30 @@ a:hover{
         width: 200px;
     }
 
+    .first_section .container{
+        padding: 40px 20px;
+    }
+
+    .second_section .count{
+        margin-left: unset !important;
+    }
+    .second_section .left_section .map_view{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+        margin-bottom: 25px;
+    }
+    .first_section .left_section .map_view{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+        margin-bottom: 45px;
+    }
+    .first_section .right_section{
+        padding: 0;
+    }
+
+
     
 }
 
@@ -760,4 +784,14 @@ a:hover{
         display: none;
     }
 
+    .first_section .container{
+        padding: 40px 8px;
+    }
+    
+    .first_section .right_section .count_box h5{
+        font-size: 18px;
+    }
+    .first_section .heading{
+        font-size: 22px;
+    }
 }
