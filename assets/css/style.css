@@ -449,6 +449,7 @@ a:hover{
     font-size: 30px;
     font-weight: bold;
     color: #006838;
+    width: 80%;
     margin-top: 35px;
     margin-bottom: 30px;
 }
@@ -595,7 +596,9 @@ a:hover{
     .banner_section_up  h4{
         font-size: 35px;
     }
-    
+    .first_section .heading{
+        width: 100%;
+    }
 }
 
 
@@ -681,6 +684,35 @@ a:hover{
         font-size: 30px;
         margin-left: 30px;
         margin-top: 10px;
+    }
+    .first_section .heading{
+        width: 100%;
+        font-size: 25px;
+    }
+    
+    .footer .left_section .logo{
+        margin-bottom: 20px;
+        width: 230px;
+    }
+    .footer .left_section p{
+        font-size: 16px;
+    }
+    .footer .right_section p{
+        font-size: 16px;
+    }
+    .footer .right_section{
+        justify-content: unset;
+        align-items: unset;
+    }
+    .footer .bt_view{
+        flex-direction: column;
+    }
+    .footer .bt_view p{
+        color: white;
+        text-align: center;
+    }
+    .footer .bt_view .icons{
+        display: none;
     }
 
 
@@ -827,6 +859,7 @@ a:hover{
     }
     .first_section .heading{
         font-size: 22px;
+        width: 100%;
     }
 
     .banner_section_up  h4{
