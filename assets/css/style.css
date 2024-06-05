@@ -27,7 +27,7 @@
     box-sizing: border-box;
     font-family: var(--body-font);
 }
-body{
+body, html{
     max-width: 100%;
     overflow-x: hidden !important;
 }
@@ -519,6 +519,8 @@ a:hover{
         margin-bottom: 20px;
         width: 200px;
     }
+
+    
 }
 
 
