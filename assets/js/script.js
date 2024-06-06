@@ -93,15 +93,23 @@ mapContainer.addEventListener("mouseleave", () => {
     }
 });
 
-mapContainer.addEventListener("click", (event) => {
+mapContainer.addEventListener("click", async (event) => {
     const target = event.target;
 
-    // Check if clicked element is a path and has a data-tooltip attribute
+    // Check if the clicked element is a path and has a data-tooltip attribute
     if (target.tagName !== "path" || !target.dataset.tooltip) return;
 
     const state = target.dataset.tooltip;
+    const url = `${state}.html`;
 
-    // Redirect to state.html with the dynamic state value
-    window.location.href = `${state}.html`;
+    // Check if the URL exists
+    try {
+        const response = await fetch(url, { method: 'HEAD' });
+        if (response.ok) {
+            window.location.href = url;
+        }
+    } catch (error) {
+        // Do nothing if the file does not exist or there is an error
+        console.error(`Error fetching ${url}:`, error);
+    }
 });
-

@@ -44,6 +44,7 @@ a:hover{
 
 .navbar{
     padding: 20px 0;
+    background-color: #e6e6e640;
 }
 .navbar .navbar-brand img{
     width: 200px;
