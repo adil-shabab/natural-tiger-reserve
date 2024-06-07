@@ -40,6 +40,9 @@ a:hover{
 .bandipur_click, .biligiriranganatha_click, .kali_click, .nagarahole_click, .bhadra_click{
     cursor: pointer;
 }
+.highlight {
+    background-color: var(--primary-color);
+}
 
 
 .navbar{
@@ -50,7 +53,7 @@ a:hover{
     width: 200px;
 }
 .navbar .nav-item{
-    margin-left: 19px;
+    margin-left: 15px;
 }
 .navbar .nav-item .nav-link{
     font-size: 17px;
@@ -64,11 +67,11 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 30px;
     position: relative;
 }
 .navbar .search input{
-    width: 280px;
+    width: 260px;
     background-color: rgba(206, 206, 206, 0.234);
     border: none;
     padding: 8px 15px 8px 45px;
@@ -889,3 +892,5 @@ a:hover{
     }
 }
   
+
+
