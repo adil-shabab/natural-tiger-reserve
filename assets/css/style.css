@@ -43,7 +43,9 @@ a:hover{
 .highlight {
     background-color: var(--primary-color);
 }
-
+.state_img{
+    padding: 80px 0px;
+}
 
 .navbar{
     padding: 20px 0;
@@ -420,10 +422,20 @@ a:hover{
 
 
 
-
+.banner_one{
+    background: url(../img/banner-up.png);
+}
+.banner_two{
+    background: url(../img/banner-two.jpg);
+}
+.banner_three{
+    background: url(../img/banner-three.jpg);
+}
+.banner_four{
+    background: url(../img/banner-four.jpg);
+}
 .banner_section_up{
     padding: 35px 0;
-    background: url(../img/banner-up.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
