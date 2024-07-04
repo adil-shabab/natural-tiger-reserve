@@ -177,7 +177,7 @@ a:hover{
     font-size: 17px;
     text-align: justify;
 }
-.hero_section button{
+.bt__n{
     background-color: var(--primary-color);
     border: 2px solid var(--primary-color);
     outline: none;
@@ -194,7 +194,7 @@ a:hover{
     border-radius: 3px;
     margin-top: 20px;
 }
-.hero_section button::before{
+.bt__n::before{
     content: "";
     position: absolute;
     top: 0;
@@ -205,12 +205,12 @@ a:hover{
     transition: 0.3s linear;
     z-index: -1;
 }
-.hero_section button:hover::before{
+.bt__n:hover::before{
     width: 100%;
     left: 0;
     color: black;
 }
-.hero_section button:hover{
+.bt__n:hover{
     color: black;
 }
 .hero_section .icons{
@@ -740,13 +740,218 @@ a:hover{
     .footer .bt_view .icons{
         display: none;
     }
-
-
-    
+}.banner_section_blog {
+    height: 65vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures no overflow from the banner */
 }
 
+.banner_section_blog img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    display: block; /* Prevents any extra space below the image */
+}
 
+.banner_section_blog::before {
+    content: '';
+    background-color: #000000d0;
+    z-index: 11;
+    opacity: 0.5; /* Adjust the opacity as needed */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none; /* Ensures the overlay is not interactive */
+}
 
+.banner_section_blog::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background: url('../img/mask-blog.png') no-repeat bottom; /* Corrected to background */
+    background-size: cover; /* Ensures the mask covers the entire area */
+    z-index: 1111;
+    pointer-events: none; /* Ensures the mask is not interactive */
+}
+.contact_section_banner::after{
+    background: url('../img/contact-mask.png') no-repeat bottom; /* Corrected to background */
+}
+.banner_section_blog .container{
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 111;
+}
+.banner_section_blog h2{
+    font-size: 65px;
+    font-weight: bold;
+    color: white;
+}
+.banner_section_blog h3{
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+}
+.banner_section_blog p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: white;
+}
+.banner_section_blog p span{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.blog_container{
+    background-color: white;
+    padding: 50px 0px;
+    margin-top: -20px;
+    z-index: 111;
+    position: relative;
+}
+.blog_container .blog_box{
+    width: 100%;
+    padding: 10px;
+}
+.blog_container .blog_box img{
+    width: 100%;
+    height: 380px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.blog_container .box_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+.blog_container .box_flex .label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.blog_container .box_flex i{
+    color: var(--primary-color);
+    font-size: 15px;
+}
+.blog_container .box_flex span{
+    color: rgb(54, 54, 54);
+    font-size: 15px;
+}
+.blog_container h3{
+    margin-top: 15px;
+    font-size: 21px;
+    margin-bottom: 9px;
+    font-weight: 600;
+}
+.blog_container p{
+    color: rgb(85, 85, 85);
+}
+.blog_details{
+    padding: 50px 0px;
+    margin-top: -20px;
+    z-index: 111;
+    background-color: white;
+    position: relative;
+}
+.blog_details .category{
+    text-align: center;
+    font-size: 20px;
+    color: #e6a400;
+}
+
+.blog_details .before-date,
+.blog_details .after-date {
+    width: 100px;
+    height: 1px; /* Or adjust to suit your design */
+    background-color: rgb(136, 136, 136); /* Same color as the text */
+    margin: 0 10px; /* Space between the lines and date */
+}
+
+.blog_details .date {
+    font-size: 15px;
+    color: rgb(136, 136, 136);
+    font-weight: 500;
+    text-align: center;
+}
+
+.blog_details .date-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    margin-bottom: 35px;
+}
+.blog_details .author{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.blog_details .author img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.blog_details .txt_flex{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+.blog_details .txt_flex span{
+    font-size: 15px;
+}
+.blog_details .txt_flex span.name{
+    font-weight: bold;
+}
+.blog_details p{
+    font-size: 17px;
+    color: rgb(112, 112, 112);
+    text-align: justify;
+}
+
+.contact_us_section{
+    padding: 50px 0px;
+    margin-top: -20px;
+    z-index: 111;
+    position: relative;
+    background-color: white;
+}
+.contact_us_section .left_section h4{
+    font-size: 25px;
+    font-weight: 600;
+}
+@media screen and (max-width: 480px) {
+
+    .banner_section_blog h2{
+        font-size: 45px;
+    }
+    .banner_section_blog h3{
+        font-size: 35px;
+    }
+    .banner_section_blog p{
+        font-size: 18px;
+    }
+
+}
 @media screen and (max-width: 480px) {
   
     .offcanvas{
@@ -895,6 +1100,24 @@ a:hover{
         margin-top: 0px;
         font-family: var(--head-font);
     }
+    
+    .banner_section_blog h2{
+        font-size: 35px;
+    }
+    .banner_section_blog h3{
+        font-size: 28px;
+    }
+    .banner_section_blog p{
+        font-size: 18px;
+    }
+    .blog_details p{
+        font-size: 14px;
+    }
+    .blog_details{
+        padding: 35px 0px;
+    }
+
+    
 }
 
 
