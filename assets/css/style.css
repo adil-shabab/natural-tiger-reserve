@@ -935,11 +935,78 @@ a:hover{
     position: relative;
     background-color: white;
 }
-.contact_us_section .left_section h4{
-    font-size: 25px;
+.contact_us_section .left_section{
+    padding-right: 30px;
+}
+.contact_us_section .left_section h2{
+    font-size: 35px;
     font-weight: 600;
 }
-@media screen and (max-width: 480px) {
+.contact_us_section .left_section h3{
+    font-size: 24px;
+    margin-top: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.contact_us_section .left_section p{
+    color: rgb(129, 129, 129);
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 18px;
+}
+.contact_us_section .left_section .icon_boxes{
+    margin-top: 20px;
+}
+.contact_us_section .left_section .box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact_us_section .left_section .box span{
+    font-size: 16px;
+    margin-left: 10px;
+    color: rgb(129, 129, 129);
+}
+.contact_us_section .left_section .box i{
+    color: #da9c00;
+}
+.contact_us_section .right_section h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact_us_section .right_section{
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 5px;
+    padding: 25px ;
+}
+.contact_us_section .right_section input{
+    width: 100%;
+    border: none ;
+    outline: none;
+    padding: 12px 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+.contact_us_section .right_section textarea{
+    height: 160px;
+    width: 100%;
+    border: none ;
+    outline: none;
+    padding: 12px 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+.contact_us_section .right_section button{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    margin-top: 10px;
+}
+@media screen and (max-width: 992px) {
 
     .banner_section_blog h2{
         font-size: 45px;
@@ -949,6 +1016,10 @@ a:hover{
     }
     .banner_section_blog p{
         font-size: 18px;
+    }
+    .contact_us_section .left_section{
+        padding-right: 15px;
+        margin-bottom: 35px;
     }
 
 }
@@ -1116,8 +1187,29 @@ a:hover{
     .blog_details{
         padding: 35px 0px;
     }
+    .contact_us_section{
+        padding: 20px 0px;
+    }
+    .contact_us_section .left_section h2{
+        font-size: 25px;
+    }
+    .contact_us_section .left_section p{
+        font-size: 15px;
+    }
+    .contact_us_section .left_section h3{
+        font-size: 20px;
+    }
+    .contact_us_section .right_section h3{
+        font-size: 23px;
+    }
+    .contact_us_section .right_section{
+        border: none;
+        padding: 15px;
+    }
 
     
+
+
 }
 
 
