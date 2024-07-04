@@ -560,187 +560,7 @@ a:hover{
 
 
 
-
-
-@media screen and (max-width: 1024px) {
-
-    .navbar .navbar-brand img{
-        width: 160px;
-    }
-    .navbar .nav-item{
-        margin-left: 15px;
-    }
-    .navbar .nav-item .nav-link{
-        font-size: 16px;
-    }
-    .navbar .search{
-        margin-left: 30px;
-    }
-
-
-    .hero_section{
-        min-height: unset;    
-        background-position: right;
-        padding: 55px 0;
-        background-size: cover;
-    }
-    .hero_section h1{
-        font-size: 45px;
-        margin-bottom: 15px;
-    }
-    .hero_section p{
-        font-size: 15px;
-    }
-    .hero_section .icons{
-        right: 0px;
-        left: unset;
-        bottom: 0;
-        height: fit-content;
-        align-self: flex-end;
-    }
-
-    .map_section{
-        min-height: 120vh;
-        padding: 20px 0px;
-    }
-    .map_section .head_view{
-        position: absolute;
-        right: 15%;
-        z-index: 11;
-    }
-    .footer .left_section .logo{
-        width: 220px;
-    }
-
-    .first_section .right_section{
-        padding-left: 20px;
-    }
-    .second_section .right_section{
-        padding-right: 20px;
-    }
-
-    .banner_section_up  h4{
-        font-size: 35px;
-    }
-    .first_section .heading{
-        width: 100%;
-    }
-}
-
-
-
-
-@media screen and (max-width: 834px) {
-    .map_section svg{
-        width: 100% !important;
-    }
-    .hero_section{
-        min-height: unset;
-        background: unset;
-        padding: 10px 0px 30px 0px;
-    }
-    .hero_section .left_section img{
-        border-radius: 8px;
-        margin-bottom: 25px;
-    }
-    .hero_section .text_view{
-        width: 90%;
-        padding: 20px;
-    }
-    .hero_section h1{
-        font-size: 45px;
-    }
-    .hero_section p{
-        font-size: 15px;
-    }
-    .hero_section .icons{
-        right: 0px;
-        left: unset;
-        top: 0;
-        height: fit-content;
-        align-self: flex-end;
-        
-    }
-    .map_section{
-        min-height: 150vh;
-        padding: 100px 0px 50px 0px;
-    }
-
-    .map_section .head_view{
-        right: 15%;
-    }
-    .map_section .head_view  img.arrow{
-        margin-left: 70px;
-        margin-top: -50px;
-    }
-    .map_section .state_view{
-        position: relative;
-        width: 100%;
-        margin: auto;
-    }
-    .footer .left_section .logo{
-        margin-bottom: 20px;
-        width: 200px;
-    }
-
-    .first_section .container{
-        padding: 40px 20px;
-    }
-
-    .second_section .count{
-        margin-left: unset !important;
-    }
-    .second_section .left_section .map_view{
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 0;
-        margin-bottom: 25px;
-    }
-    .first_section .left_section .map_view{
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 0;
-        margin-bottom: 45px;
-    }
-    .first_section .right_section{
-        padding: 0;
-    }
-
-    .banner_section_up  h4{
-        font-size: 30px;
-        margin-left: 30px;
-        margin-top: 10px;
-    }
-    .first_section .heading{
-        width: 100%;
-        font-size: 25px;
-    }
-    
-    .footer .left_section .logo{
-        margin-bottom: 20px;
-        width: 230px;
-    }
-    .footer .left_section p{
-        font-size: 16px;
-    }
-    .footer .right_section p{
-        font-size: 16px;
-    }
-    .footer .right_section{
-        justify-content: unset;
-        align-items: unset;
-    }
-    .footer .bt_view{
-        flex-direction: column;
-    }
-    .footer .bt_view p{
-        color: white;
-        text-align: center;
-    }
-    .footer .bt_view .icons{
-        display: none;
-    }
-}.banner_section_blog {
+.banner_section_blog {
     height: 65vh;
     position: relative;
     display: flex;
@@ -798,11 +618,13 @@ a:hover{
 .banner_section_blog h2{
     font-size: 65px;
     font-weight: bold;
+    text-align: center;
     color: white;
 }
 .banner_section_blog h3{
     font-size: 38px;
     font-weight: bold;
+    text-align: center;
     color: white;
 }
 .banner_section_blog p{
@@ -1015,6 +837,13 @@ a:hover{
     color: black;
     margin-top: 10px;
 }
+
+
+
+.banner_section_blog .container {
+    margin-top: -70px ;
+}
+
 @media screen and (max-width: 992px) {
 
     .banner_section_blog h2{
@@ -1026,10 +855,15 @@ a:hover{
     .banner_section_blog p{
         font-size: 18px;
     }
+    .banner_section_blog .container {
+        margin-top: 0px ;
+    }
+
     .contact_us_section .left_section{
         padding-right: 15px;
         margin-bottom: 35px;
     }
+
 
 }
 @media screen and (max-width: 480px) {
@@ -1043,6 +877,10 @@ a:hover{
     }
     .navbar .navbar-brand img{
         width: 140px;
+    }
+
+    .banner_section_blog .container {
+        margin-top: 0px ;
     }
 
 
@@ -1154,7 +992,7 @@ a:hover{
         flex-direction: column;
     }
     .footer .bt_view p{
-        color: white;
+        color: black;
         text-align: center;
     }
     .footer .bt_view .icons{
@@ -1182,10 +1020,10 @@ a:hover{
     }
     
     .banner_section_blog h2{
-        font-size: 35px;
+        font-size: 33px;
     }
     .banner_section_blog h3{
-        font-size: 28px;
+        font-size: 23px;
     }
     .banner_section_blog p{
         font-size: 18px;
@@ -1228,6 +1066,10 @@ a:hover{
         padding: 40px;
         gap: 45px;
     }
+    .banner_section_blog .container {
+        margin-top: 0px ;
+    }
+
     .hero_section .icons img{
         width: 32px;
     }
@@ -1235,7 +1077,200 @@ a:hover{
         bottom: 200px;
         right: 16%;
     }
+    .banner_section_blog {
+        height: 65vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Ensures no overflow from the banner */
+    }
 }
   
 
 
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .navbar .navbar-brand img{
+        width: 160px;
+    }
+    .navbar .nav-item{
+        margin-left: 15px;
+    }
+    .navbar .nav-item .nav-link{
+        font-size: 16px;
+    }
+    .navbar .search{
+        margin-left: 30px;
+    }
+    .banner_section_blog .container {
+        margin-top: 0px ;
+    }
+
+
+    .hero_section{
+        min-height: unset;    
+        background-position: right;
+        padding: 55px 0;
+        background-size: cover;
+    }
+    .hero_section h1{
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+    .hero_section p{
+        font-size: 15px;
+    }
+    .hero_section .icons{
+        right: 0px;
+        left: unset;
+        bottom: 0;
+        height: fit-content;
+        align-self: flex-end;
+    }
+
+    .map_section{
+        min-height: 120vh;
+        padding: 20px 0px;
+    }
+    .map_section .head_view{
+        position: absolute;
+        right: 15%;
+        z-index: 11;
+    }
+    .footer .left_section .logo{
+        width: 220px;
+    }
+
+    .first_section .right_section{
+        padding-left: 20px;
+    }
+    .second_section .right_section{
+        padding-right: 20px;
+    }
+
+    .banner_section_up  h4{
+        font-size: 35px;
+    }
+    .first_section .heading{
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 834px) {
+    .map_section svg{
+        width: 100% !important;
+    }
+    .hero_section{
+        min-height: unset;
+        background: unset;
+        padding: 10px 0px 30px 0px;
+    }
+    .hero_section .left_section img{
+        border-radius: 8px;
+        margin-bottom: 25px;
+    }
+    .hero_section .text_view{
+        width: 90%;
+        padding: 20px;
+    }
+    .hero_section h1{
+        font-size: 45px;
+    }
+    .hero_section p{
+        font-size: 15px;
+    }
+    .hero_section .icons{
+        right: 0px;
+        left: unset;
+        top: 0;
+        height: fit-content;
+        align-self: flex-end;
+        
+    }
+    .map_section{
+        min-height: 150vh;
+        padding: 100px 0px 50px 0px;
+    }
+
+    .map_section .head_view{
+        right: 15%;
+    }
+    .map_section .head_view  img.arrow{
+        margin-left: 70px;
+        margin-top: -50px;
+    }
+    .map_section .state_view{
+        position: relative;
+        width: 100%;
+        margin: auto;
+    }
+    .footer .left_section .logo{
+        margin-bottom: 20px;
+        width: 200px;
+    }
+
+    .first_section .container{
+        padding: 40px 20px;
+    }
+
+    .second_section .count{
+        margin-left: unset !important;
+    }
+    .second_section .left_section .map_view{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+        margin-bottom: 25px;
+    }
+    .first_section .left_section .map_view{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+        margin-bottom: 45px;
+    }
+    .first_section .right_section{
+        padding: 0;
+    }
+
+    .banner_section_up  h4{
+        font-size: 30px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .first_section .heading{
+        width: 100%;
+        font-size: 25px;
+    }
+    
+    .footer .left_section .logo{
+        margin-bottom: 20px;
+        width: 230px;
+    }
+    .footer .left_section p{
+        font-size: 16px;
+    }
+    .footer .right_section p{
+        font-size: 16px;
+    }
+    .footer .right_section{
+        justify-content: unset;
+        align-items: unset;
+    }
+    .footer .bt_view{
+        flex-direction: column;
+    }
+    .footer .bt_view p{
+        color: black;
+        text-align: center;
+    }
+    .footer .bt_view .icons{
+        display: none;
+    }
+}
