@@ -58,7 +58,9 @@ a:hover{
     background-color: #e6e6e640;
 }
 .navbar .navbar-brand img{
-    width: 200px;
+    width: 180px;
+    height: 72px;
+    object-fit: contain;
 }
 .navbar .nav-item{
     margin-left: 15px;
@@ -363,7 +365,10 @@ a:hover{
   
   
 
-
+.hero_logo{
+    width: 160px;
+    margin-bottom: 30px;
+}
 .footer{
     background-color: #0068372a;
     padding: 80px 0px 30px 0px;
@@ -371,6 +376,8 @@ a:hover{
 .footer .left_section .logo{
     margin-bottom: 25px;
     width: 280px;
+    height: 120px;
+    object-fit: contain;
 }
 .footer .left_section p{
     color: black;
@@ -1170,7 +1177,7 @@ a:hover{
     .hero_section{
         min-height: unset;
         background: unset;
-        padding: 10px 0px 30px 0px;
+        padding: 10px 0px 130px 0px;
     }
     .hero_section .left_section img{
         border-radius: 8px;
