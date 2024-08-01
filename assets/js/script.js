@@ -72,6 +72,7 @@ mapContainer.addEventListener("mousemove", (event) => {
         if (tooltip !== currentTooltip) {
             tooltip.style.opacity = 0;
             tooltip.style.display = "none";
+            tooltip.style.bottom = 'unset';
         }
     });
 
