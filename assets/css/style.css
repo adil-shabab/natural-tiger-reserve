@@ -1195,7 +1195,7 @@ a:hover{
 @media screen and (max-width: 580px) {
     .map_section svg {
         margin-top: 100px;
-        height: fit-content !important;
+        height: 350px !important;
     }
 }
 
@@ -1313,6 +1313,6 @@ a:hover{
     }
     .map_section svg{
         margin-top: 100px;
-        height: fit-content !important;
+        height: 340px !important;
     }
 }
