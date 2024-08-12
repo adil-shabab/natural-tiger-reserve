@@ -1232,7 +1232,7 @@ a:hover{
         
     }
     .map_section{
-        min-height: 150vh;
+        min-height: unset;
         padding: 50px 0px 0px 0px;
     }
 
