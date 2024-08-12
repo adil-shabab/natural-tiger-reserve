@@ -845,6 +845,11 @@ a:hover{
     color: black;
     margin-top: 10px;
 }
+.head_txt{
+    font-size: 55px;
+    margin-bottom: 22px;
+    font-weight: 600;
+}
 
 
 
@@ -871,7 +876,10 @@ a:hover{
         padding-right: 15px;
         margin-bottom: 35px;
     }
-
+    .head_txt{
+        font-size: 35px;
+    }
+    
 
 }
 @media screen and (max-width: 480px) {
@@ -880,6 +888,17 @@ a:hover{
         width: 90%;
     }
 
+    .map_section{
+        min-height: fit-content;
+    }
+    .head_txt{
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+    
+    .map_section .tooltip{
+        display: none;
+    }
     .navbar{
         padding: 20px 0;
     }
@@ -935,7 +954,7 @@ a:hover{
     }
     .map_section svg{
         margin-top: 100px;
-        height: fit-content;
+        height: fit-content !important;
     }
     .map_section .head_view .flex_box{
         display: flex;
@@ -985,7 +1004,7 @@ a:hover{
     }
     .footer .left_section .logo{
         margin-bottom: 20px;
-        width: 230px;
+        width: 130px;
     }
     .footer .left_section p{
         font-size: 16px;
@@ -1020,6 +1039,10 @@ a:hover{
         width: 100%;
     }
 
+    .footer .left_section .logo{
+        margin-bottom: 20px;
+        width: 130px;
+    }
     .banner_section_up  h4{
         font-size: 25px;
         position: absolute;
@@ -1169,7 +1192,12 @@ a:hover{
     }
 }
 
-
+@media screen and (max-width: 580px) {
+    .map_section svg {
+        margin-top: 100px;
+        height: fit-content !important;
+    }
+}
 
 
 @media screen and (max-width: 834px) {
@@ -1179,7 +1207,7 @@ a:hover{
     .hero_section{
         min-height: unset;
         background: unset;
-        padding: 10px 0px 130px 0px;
+        padding: 10px 0px 50px 0px;
     }
     .hero_section .left_section img{
         border-radius: 8px;
@@ -1205,7 +1233,7 @@ a:hover{
     }
     .map_section{
         min-height: 150vh;
-        padding: 100px 0px 50px 0px;
+        padding: 50px 0px 0px 0px;
     }
 
     .map_section .head_view{
@@ -1261,7 +1289,7 @@ a:hover{
     
     .footer .left_section .logo{
         margin-bottom: 20px;
-        width: 230px;
+        width: 150px;
     }
     .footer .left_section p{
         font-size: 16px;
@@ -1282,5 +1310,9 @@ a:hover{
     }
     .footer .bt_view .icons{
         display: none;
+    }
+    .map_section svg{
+        margin-top: 100px;
+        height: fit-content !important;
     }
 }
